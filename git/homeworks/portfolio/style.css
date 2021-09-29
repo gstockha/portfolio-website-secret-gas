@@ -53,7 +53,7 @@ body{
     }
 /*hero*/
     .hero{
-        background-image: url('../assets/templeofmystery.jpg');
+        background-image: url('./assets/templeofmystery.jpg');
         background-size: cover;
         background-position: center;
         flex-wrap: wrap;
