@@ -1,11 +1,9 @@
 :root{
     --purplehead: rgb(224, 182, 248);
     --purplebg: rgb(236, 226, 241);
-    --gold: #faeb20;
     --blue: #8ddee6;
     --bluetext: #1c2b5c;
-    --section-fsize: 3vw;
-    --section-flex: 0 10%;
+    --heightmult: (10px * 2);
 }
 * {
     box-sizing: border-box;
@@ -88,8 +86,8 @@ body{
         padding-bottom: 40px;
     }
     .info-section h2{
-        font-size: var(--section-fsize);
-        flex: var(--section-flex);
+        font-size: 3vw;
+        flex: 0 10%;
         text-align: right;
         justify-content: space-between;
     }
@@ -101,7 +99,9 @@ body{
         padding-left: 24px;
     }
     #about-me img{
-        margin: 30px auto;
+        margin: 0 0 0 1vw;
+        width: 10%;
+        height: 10%;
     }
 /*my work*/
     .made-list{
@@ -113,11 +113,11 @@ body{
     #my-work li{
         width: 50%;
         list-style: none;
-        padding-bottom: 1.2vw;
+        padding-bottom: 1.8vw;
     }
     #my-work img {
-        height: calc(100% - (10px * 2)); /*googled this one*/
-        width: calc(100% - (10px * 2)); /*googled this one*/
+        height: calc(96% - var(--heightmult)); /*googled this one*/
+        width: calc(100% - var(--heightmult)); /*googled this one*/
         border: .5vw solid var(--bluetext);
         filter: hue-rotate(0deg) brightness(80%) grayscale(0%);
     }
@@ -129,6 +129,9 @@ body{
     }
     #workgotad h3{
         font-size: 1.65vw;
+    }
+    #workgotad img{
+        height: calc(93% - var(--heightmult)); /*googled this one*/
     }
     #my-work img:hover{
         border: .6vw solid var(--blue);
@@ -148,7 +151,7 @@ body{
         color: var(--bluetext);
     }
     footer nav {
-        margin: 66px auto;
+        margin: 46px auto;
         width: 75%;
         text-decoration: underline 8%;
     }
@@ -161,4 +164,125 @@ body{
     }
     footer nav ul li a {
         font-size: 1.55vw;
+    }
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+    @media screen and (max-width: 980px) {
+        footer nav {
+            margin: 20px auto;
+        }
+        footer nav ul li a {
+            font-size: 2vw;
+        }
+        .info-section h4{
+            font-size: 2vw;
+        }
+        #workgotad h3{
+            font-size: 3vw;
+        }
+        #workgotad img{
+            height: calc(85% - var(--heightmult)); /*googled this one*/
+        }
+        #about-me p{
+            font-size: 1.9vw;
+        }
+        #about-me img{
+            width: 15%;
+            height: 15%;
+        }
+        header h1 {
+            font-size: 3vw;
+        }
+        header nav ul li a {
+            padding: 0 20px;
+            font-size: 2vw;
+        }
+        .hero h3{
+            font-size: 2.2vw;
+            padding: 330px 18px 0 0;
+            text-align: right;
+        }
+        .hero p{
+            font-size: 2vw;
+            padding: 0 45px 10px 0;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        footer nav {
+            margin: 12px auto;
+        }
+        footer nav ul li a {
+            font-size: 2.2vw;
+        }
+        .info-section h4{
+            font-size: 2.3vw;
+        }
+        #workgotad h3{
+            font-size: 3vw;
+        }
+        #about-me p{
+            font-size: 2.3vw;
+        }
+        #about-me img{
+            width: 18%;
+            height: 18%;
+        }
+        header h1 {
+            font-size: 4vw;
+        }
+        header nav ul li a {
+            padding: 0 10px;
+            font-size: 2.85vw;
+        }
+        .hero h3{
+            font-size: 2.5vw;
+            padding: 160px 7px 0 0;
+            text-align: right;
+        }
+        .hero p{
+            font-size: 2.2vw;
+            padding: 0 45px 50px 0;
+        }
+        .info-section h2{
+            font-size: 4vw;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        footer nav {
+            margin: 12px auto;
+        }
+        footer nav ul li a {
+            font-size: 4vw;
+        }
+        .info-section h4{
+            font-size: 2.5vw;
+        }
+        #workgotad h3{
+            font-size: 3.4vw;
+        }
+        #about-me p{
+            font-size: 2.7vw;
+        }
+        #about-me img{
+            width: 20%;
+            height: 20%;
+        }
+        header h1 {
+            font-size: 5vw;
+        }
+        header nav ul li a {
+            padding: 0 20px;
+            font-size: 3.35vw;
+        }
+        .hero h3{
+            font-size: 3vw;
+            padding: 100px 7px 0 0;
+            text-align: right;
+        }
+        .hero p{
+            font-size: 2.5vw;
+            padding: 0 45px 30px 0;
+        }
+        .info-section h2{
+            font-size: 4vw;
+        }
     }
