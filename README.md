@@ -2,4 +2,4 @@ Basic portfolio containing clickable and interactable links, fun/cool art, a lit
 Decently scaled for various mobile devices; not perfect!
 Kinda ugly :)
 
-https://gotad.io/portfolio-website/
+https://gotad.io/portfolio-website-secret-gas/
